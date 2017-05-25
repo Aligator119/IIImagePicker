@@ -18,6 +18,6 @@ s.license        = { :type => 'MIT'}
 
   s.source_files = "*.{h,m}"
   s.requires_arc = true
-  s.frameworks   = 'UIKit', 'Foundation'
+  s.frameworks   = 'UIKit', 'Foundation', 'Photos'
 
 end
