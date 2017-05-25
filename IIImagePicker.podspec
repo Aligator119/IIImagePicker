@@ -5,19 +5,20 @@ Pod::Spec.new do |s|
   s.summary      = "Open standurt picker camera or gallery"
 
 
-  s.description  = <<-DESC
-                   DESC
+  s.description  = "Open Image gallery or camera with standart picker and return result image."
 
   s.homepage     = "https://github.com/Aligator119/IIImagePicker"
 
   s.license      = "MIT"
 
   s.author             = { "Vanja" => "vanja.irchak@gmail.com" }
-  s.platform     = :ios, "5.0"
+  s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/Aligator119/IIImagePicker.git", :commit => "56f44724f16d1be2e633fc903ee1d325c2c6d132" }
+  s.source       = { :git => "https://github.com/Aligator119/IIImagePicker.git", :tag => s.version.to_s }
 
   s.source_files  = "*.{h,m}"
   s.requires_arc = true
+
+#s.frameworks = 'UIKit'
 
 end

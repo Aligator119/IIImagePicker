@@ -30,9 +30,9 @@
     return self;
 }
 
-+ (SBImagePicker*)initWithParent:(UIViewController *)parent
++ (IIImagePicker *)initWithParent:(UIViewController *)parent
 {
-    SBImagePicker *picker = [[SBImagePicker alloc] init];
+    IIImagePicker *picker = [[IIImagePicker alloc] init];
     picker.parentVC = parent;
     return picker;
 }
@@ -48,19 +48,6 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     void (^imagePickingFinishing)(UIImage*) = ^(UIImage* image) {
-        
-        //        if (image.size.width > image.size.height) {
-        //            image =  [image cropToSize:CGSizeMake(image.size.height, image.size.height)];
-        //        } else {
-        //            image = [image cropToSize:CGSizeMake(image.size.width, image.size.width)];
-        //        }
-        //
-        //        float screenWidth = [UIScreen mainScreen].bounds.size.width;
-        //
-        //        if (screenWidth < image.size.width) {
-        //            float aspectRatio = screenWidth / image.size.width;
-        //            image = [image resizedImageToSize:CGSizeMake(image.size.width * aspectRatio,image. size.height * aspectRatio)];
-        //        }
         if (self.onImagePicking != nil) {
             self.onImagePicking(image);
         }

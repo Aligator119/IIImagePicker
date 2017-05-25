@@ -17,7 +17,7 @@
 @property (nonatomic, assign) UIImagePickerControllerSourceType sourceType;
 @property (nonatomic, assign) BOOL allowEditing;
 
-+ (SBImagePicker*)initWithParent:(UIViewController*)parent;
++ (IIImagePicker *)initWithParent:(UIViewController *)parent;
 - (void)showImagePicker;
 - (void)hideImagePicker;
 
